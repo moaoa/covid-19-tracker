@@ -1,0 +1,10 @@
+.formControl {
+  width: 30%;
+  margin: 0 auto !important;
+  /* margin-bottom: 30px !important; */
+}
+.countryPicker {
+  margin-top: 1rem;
+  display: flex !important;
+  justify-content: center !important;
+}

@@ -7,4 +7,5 @@ export const fetchDataFromDayOne = async (countryName, status) => {
   console.log(data);
   return data;
 };
+
 export default covid19Api;

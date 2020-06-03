@@ -17,7 +17,7 @@ export default function PrivateRoute({
 
         if (
           context.countries.find(
-            (country) => country.Country === match.params.country
+            (country) => country.Slug === match.params.country
           )
         )
           return <Component {...props} />;

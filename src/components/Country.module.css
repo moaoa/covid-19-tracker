@@ -1,0 +1,8 @@
+.error {
+  max-width: 75vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+.centerWithFlex {
+  text-align: center;
+}

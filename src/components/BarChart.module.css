@@ -1,0 +1,10 @@
+.barchart {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .barchart {
+    display: none !important;
+  }
+}

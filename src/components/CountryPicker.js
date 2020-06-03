@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Context } from "../App";
 import { useHistory } from "react-router-dom";
 import { NativeSelect, FormControl } from "@material-ui/core";
+import Loader from "react-loader-spinner";
 
 import styles from "./CountryPicker.module.css";
 export default function CountryPicker() {
@@ -13,10 +14,21 @@ export default function CountryPicker() {
     setSelectValue(e.target.value);
     history.push("/" + e.target.value);
   };
-
+  if (!countries.length)
+    return (
+      <div style={{ textAlign: "center", margin: "2rem" }}>
+        <Loader
+          type="TailSpin"
+          color="#00BFFF"
+          height={100}
+          width={100}
+          timeout={3000}
+        />
+      </div>
+    );
   return (
     <div className={styles.countryPicker}>
-      {countries.length ? (
+      {
         <FormControl className={styles.FormControl} onChange={handleChange}>
           <NativeSelect value={selectValue}>
             <option key={Date.now()} value={""} selected>
@@ -29,9 +41,7 @@ export default function CountryPicker() {
             ))}
           </NativeSelect>
         </FormControl>
-      ) : (
-        "loading"
-      )}
+      }
     </div>
   );
 }

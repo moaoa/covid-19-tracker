@@ -8,10 +8,7 @@ import styles from "./Card.module.css";
 import cx from "classnames";
 
 export default function Cards({ confirmed, recovered, deaths }) {
-  console.log("deaths cards :", deaths);
-
   // const cardsTitles = ["deaths", "", ""];
-  // const classes = useStyles();
 
   return (
     <Grid container spacing={3} justify="center">

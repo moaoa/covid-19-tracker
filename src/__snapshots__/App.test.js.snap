@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sort the data 1`] = `
+Array [
+  Object {
+    "country": "a",
+  },
+  Object {
+    "country": "b",
+  },
+  Object {
+    "country": "c",
+  },
+]
+`;
